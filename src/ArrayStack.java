@@ -39,6 +39,9 @@ public class ArrayStack<T> {
 
         return top == -1;
     }
+    public void stam(){
+        System.out.println("hello");
+    }
 
 
 }
