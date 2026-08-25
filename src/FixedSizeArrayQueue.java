@@ -58,5 +58,16 @@ public class FixedSizeArrayQueue<T> {
         }
     }
 
+    public void print() {
+        if (size == 0) {
+            throw new RuntimeException("Queue is empty");
+        }
+        for (int i = 0; i < size; i++) {
+            int index = (front + i) % queue.length;
+
+            System.out.println(queue[i]);
+
+        }
+    }
 
 }
