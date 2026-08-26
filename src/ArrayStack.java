@@ -40,5 +40,16 @@ public class ArrayStack<T> {
         return top == -1;
     }
 
+    public void reverse() {
+        T temp = null;
+        for (int i = 0; i < (top + 1) / 2; i++) {
+            temp = (T) array[i];
+            array[i] = array[top - i];
+            array[top - i] = temp;
+        }
+
+
+    }
+
 
 }
