@@ -2,30 +2,44 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        QueueBasedStack<Integer> stack = new QueueBasedStack<>(5);
-        FixedSizeArrayQueue<Integer> queue = new FixedSizeArrayQueue<>(5);
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        queue.enqueue(4);
+//        QueueBasedStack<Integer> stack = new QueueBasedStack<>(5);
+//        FixedSizeArrayQueue<Integer> queue = new FixedSizeArrayQueue<>(5);
+//        queue.enqueue(1);
+//        queue.enqueue(2);
+//        queue.enqueue(3);
+//        queue.enqueue(4);
+//
+//
+//        queue.print();
+//
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//
+//        queue.print();
+//
+//
+//        stack.push(10);
+//        stack.push(20);
+//        stack.push(30);
+//
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
 
 
-        queue.print();
+        ArrayStack<Integer> stack = new ArrayStack<>(5);
 
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
+        stack.push(3);
+        stack.push(1);
+        stack.push(4);
+        stack.push(2);
 
-        queue.print();
+        SortStack.sortStack(stack);
 
-
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
-
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop());
+        }
 
     }
 }
