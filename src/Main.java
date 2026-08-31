@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -42,14 +44,22 @@ public class Main {
 //        }
 //
 
-        MinStack stack = new MinStack(5);
-        stack.push(3);
-        stack.push(1);
-        stack.push(4);
-        stack.push(2);
+//        MinStack stack = new MinStack(5);
+//        stack.push(3);
+//        stack.push(1);
+//        stack.push(4);
+//        stack.push(2);
+//
+//
+//        System.out.println(stack.getMin());
 
 
-        System.out.println(stack.getMin());
+        int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
+//        int[] answer = DailyTemperatures.answer(temperatures);
+//        System.out.println(Arrays.toString(answer));
 
+
+        int[] dailyTemperatures = DailyTemperatures.dailyTemperatures(temperatures);
+        System.out.println(Arrays.toString(dailyTemperatures));
     }
 }
